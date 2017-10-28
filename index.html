@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button id="click">授权</button>
+
+<script src="https://res.wx.qq.com/connect/zh_CN/htmledition/js/wxLogin.js"></script>
+<script>
+ var xhr = new XMLHttpRequest();
+ document.querySelector('#click').addEventListener('click',function(){
+     xhr.open('GET', '/wx_login', true);
+//     xhr.setRequestHeader("Access-Control-Allow-Origin", "*");
+//     xhr.setRequestHeader("Access-Control-Allow-Headers", "Content-Type,Content-Length, Authorization, Accept,X-Requested-With");
+//     xhr.setRequestHeader("Access-Control-Allow-Methods","PUT,POST,GET,DELETE,OPTIONS");
+//     xhr.setRequestHeader("X-Powered-By",' 3.2.1')
+ xhr.send(null)
+ })
+
+
+</script>
+</body>
+</html>
